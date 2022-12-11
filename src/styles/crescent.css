@@ -1,0 +1,23 @@
+/*https://blog.avneesh.tech/how-to-use-google-fonts-in-tailwindcss*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    .redButton {
+        @apply bg-red-500 text-white py-1 px-1 hover:bg-red-400 hover:border-red-400
+    }
+    .whiteBlackButton {
+        @apply bg-white text-black py-1 px-1 hover:bg-gray-400 hover:border-gray-400
+    }
+    .whiteBlackSmallButton {
+        @apply bg-white text-black py-0.5 px-1 hover:bg-gray-400 hover:border-gray-400
+    }
+    .mobileInputText {
+        @apply w-32 px-1 py-0.5 bg-red-500 border-none text-white text-sm
+    }
+    .mobileInputLabel {
+        @apply w-24 inline-block text-right text-red-500 mr-2
+    }
+}
